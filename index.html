@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-container" class="container">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <div>
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+
+        <div id="products-container" class="container hidden">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#" onclick="logout()">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section id="home">
+                    <h1>Bienvenido a nuestra tienda de productos</h1>
+                    <p>Explora nuestra variedad de productos y encuentra lo que necesitas.</p>
+                </section>
+
+                <section id="products">
+                    <h2>Nuestros Productos</h2>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Producto 1">
+                            <h3>Producto 1</h3>
+                            <p>$19.99</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Producto 2">
+                            <h3>Producto 2</h3>
+                            <p>$29.99</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Producto 3">
+                            <h3>Producto 3</h3>
+                            <p>$39.99</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Producto 4">
+                            <h3>Producto 4</h3>
+                            <p>$49.99</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Contacto</h2>
+                    <p>Puedes contactarnos en:</p>
+                    <ul>
+                        <li>Email: info@tienda.com</li>
+                        <li>Teléfono: 555-123456</li>
+                        <li>Dirección: Calle Principal 123, Ciudad</li>
+                    </ul>
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; 2024 Tienda de Productos. Todos los derechos reservados.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scritps.js"></script>
+</body>
+</html>
